@@ -8,12 +8,20 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    jcenter()
+}
+
+sourceSets {
+    main.kotlin.srcDirs += 'src/main/myJotlin'
+    main.java.srcDirs += 'src/main/myJava'
 }
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    compile 'org.funktionale:funktionale-all:1.0.1'
 }
 
 test {
