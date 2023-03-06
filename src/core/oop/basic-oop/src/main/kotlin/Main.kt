@@ -5,6 +5,11 @@ object MySingleton {
 }
 
 fun main(args: Array<String>) {
+//    other1()
+    other2()
+}
+
+fun other1() {
     val location = object {
         var xPosition = 200
         var yPosition = 400
@@ -21,4 +26,11 @@ fun main(args: Array<String>) {
 
     var temperature = MySingleton.getLastTemperature()
     println("Last reading = $temperature degrees")
+}
+
+fun other2() {
+    val person = NewStudent(32, "Nate", "Ebel")
+    person.age
+
+    person.printName()
 }
