@@ -6,7 +6,8 @@ object MySingleton {
 
 fun main(args: Array<String>) {
 //    other1()
-    other2()
+//    other2()
+    other3()
 }
 
 fun other1() {
@@ -33,4 +34,8 @@ fun other2() {
     person.age
 
     person.printName()
+}
+
+fun other3() {
+    val controller = SearchController.create("Kotlin")
 }
